@@ -1,4 +1,4 @@
-﻿Django
+Django
 djangorestframework
 gunicorn
 whitenoise
