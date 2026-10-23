@@ -33,12 +33,10 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    "telecom-service-rmgoju5a5-mowinlabs.vercel.app",
-    ".vercel.app",
     "localhost",
     "127.0.0.1",
+    ".vercel.app",
 ]
-
 
 # Application definition
 
