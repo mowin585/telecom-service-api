@@ -29,9 +29,15 @@ if not SECRET_KEY:
     raise ValueError("DJANGO_SECRET_KEY is missing from the .env file")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = [
+    "telecom-service-api.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
 
 
 # Application definition
@@ -161,3 +167,6 @@ REST_FRAMEWORK = {
         'login': '5/minute',
     },
 }
+CSRF_TRUSTED_ORIGINS = [
+    "https://telecom-service-api.onrender.com",
+]
